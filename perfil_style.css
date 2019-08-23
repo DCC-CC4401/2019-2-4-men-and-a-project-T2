@@ -1,0 +1,38 @@
+header {
+    color: white;
+    background: #2c3e50;
+}
+
+aside {
+    color: white;
+    background: #c0392b;
+}
+
+.color1 {
+    color: white;
+    background: #2c3e50;
+}
+
+.sign-in {
+    margin-top: 5em ;
+}
+
+.sign-in-btn {
+    margin-top: 2em;
+}
+
+.perfil-photo {
+    width: 15em;
+    height: 15em;
+    margin-top: 2em;
+}
+
+.perfil-data {
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.options-btn > .btn-group {
+    border-bottom: gray;
+    top: 4em;
+}
