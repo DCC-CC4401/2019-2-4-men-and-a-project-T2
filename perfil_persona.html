@@ -33,7 +33,7 @@
     </div>
 </header>
 
-<!-- foto de perfil y datos del usuario -->
+<!-- Foto de perfil y datos del usuario -->
 <div class="container">
     <div class="row">
         <div class="col-3-md perfil-photo">
@@ -51,14 +51,35 @@
         </div>
     </div>
 
-    <!-- Botones con las opciones -->
+    <!-- Dropdown-menus con las opciones principales -->
     <div class="row align-items-center justify-content-center">
         <div class="col-md-12 options-btn">
-            <div class="btn-group btn-block" role="group">
-                <a href="#" type="button" class="btn btn-outline-dark btn-lg">Gestión de Actividades</a>
-                <a href="#" type="button" class="btn btn-outline-dark btn-lg">Gestión de Amistades</a>
 
-                <!-- dropdown-menu -->
+            <div class="btn-group btn-block" role="group">
+
+                <!-- Gestión de Actividades -->
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Gestión de Actividades
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Actividades Tipo</a>
+                    </div>
+                </div>
+
+                <!-- Gestión de Amistades -->
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Gestión de Amistades
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="perfil_amigos.html">Tus Amigos</a>
+                        <a class="dropdown-item" href="#">Solicitudes de Amistad</a>
+                        <a class="dropdown-item" href="#">Buscar Amigos</a>
+                    </div>
+                </div>
+
+                <!-- Configuraciones -->
                 <div class="btn-group" role="group">
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Configuraciones
@@ -71,7 +92,9 @@
             </div>
         </div>
     </div>
+
 </div>
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -79,5 +102,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-</body>
+
 </html>
