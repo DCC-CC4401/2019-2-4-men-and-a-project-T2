@@ -33,5 +33,5 @@ header {
 }
 
 .row + .row {
-    margin-top: 4em;
+    margin-top: 2em;
 }
