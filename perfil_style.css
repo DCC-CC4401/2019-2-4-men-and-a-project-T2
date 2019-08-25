@@ -35,3 +35,7 @@ header {
 .row + .row {
     margin-top: 2em;
 }
+
+.last-row {
+    margin-bottom: 4rem;
+}
