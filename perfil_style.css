@@ -23,8 +23,8 @@ header {
 }
 
 .friend-photo {
-    width: 3rem;
-    height: 3rem;
+    width: 1em;
+    height: 1em;
 }
 
 .perfil-data {
@@ -39,4 +39,3 @@ header {
 .last-row {
     margin-bottom: 4rem;
 }
-
