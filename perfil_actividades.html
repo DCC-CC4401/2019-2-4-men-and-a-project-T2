@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="sp">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="perfil_style.css">
+
+    <title>Plantilla de actividades</title>
+</head>
+
+<body>
+
+    <!-- Encabezado con el logo, buscar y avatar -->
+    <header>
+        <div class="container-fluid color1">
+            <div class="row align-items-center">
+                <div class="col-md-5 offset-md-1">
+                    <h1>Logo</h1>
+                </div>
+                <div class="col-md-3 offset-md-1">
+                    <input type="text" class="form-control" placeholder="Buscar">
+                </div>
+                <div class="col-md-1">
+                    <h3>Avatar</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Foto de perfil y datos del usuario -->
+    <div class="container">
+        <div class="row">
+            <div class="col-3-md perfil-photo">
+                <p><img src="img_vacia.png" alt="foto de perfil" class="img-thumbnail" /></p>
+            </div>
+            <div class="col-md-6">
+                <section class="perfil-data">
+                    <p class="h5">Nombre</p>
+                    <p class="text-muted">Juan Ignacio</p>
+                    <p class="h5">Apellidos</p>
+                    <p class="text-muted">Pérez González</p>
+                    <p class="h5">Correo Electrónico</p>
+                    <p class="text-muted">juanito_ignacito@example.com</p>
+                </section>
+            </div>
+        </div>
+
+        <!-- Dropdown-menus con las opciones principales -->
+        <div class="row align-items-center">
+            <div class="col-md-12 options-btn">
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="perfil_actividades.html">Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil_amigos.html">Tus Amigos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil_solicitudes.html">Solicitudes de Amistad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil_configuraciones.html">Configuraciones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lista de solicitudes pendientes y botón de buscar amigos -->
+        <div class="row last-row align-items-center justify-content-left">
+            <div class="col-md-12">
+                <p class="h5">Tipos de actividades</p>
+                <div style="margin: 1em;">
+                    <button id="addRowButton" class="btn btn-secondary" onclick="showFormulary()">Nueva
+                        plantilla</button>
+                </div>
+                <div style="margin: 1em;">
+                    <form id="formulario" style="display: none" onsubmit="return addRow(this)">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label>Nombre de plantilla</label>
+                                <input type="text" class="form-control" id="inputHold" required>
+                            </div>
+                            <label>Nombre de actividad</label>
+                            <input type="text" class="form-control" id="inputName" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Descripción</label>
+                            <input type="text" class="form-control" id="inputDescription">
+                        </div>
+                        <div class="form-group">
+                            <label>Categoría</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Dormir</option>
+                                <option>Estudiar</option>
+                                <option>Ir a clase</option>
+                                <option>Viajar</option>
+                                <option>Ejercitar</option>
+                                <option>Socializar</option>
+                                <option>Jugar</option>
+                                <option>Otros</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Añadir</button>
+                        <button class="btn btn-secondary" onclick="showFormulary()">Cancelar</button>
+                    </form>
+                </div>
+                <table id="plantilla" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Nombre de plantilla</th>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Categoría</th>
+                            <th>Edición</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Para la noche</th>
+                            <td>Dormir</td>
+                            <td>Sueño profundo</td>
+                            <td>Dormir</td>
+                            <td><button class="btn btn-secondary" onclick="deleteRow(this)">Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <th>Dps del almuerzo</th>
+                            <td>Siesta</td>
+                            <td>Para después de almuerzo</td>
+                            <td>Dormir</td>
+                            <td><button class="btn btn-secondary" onclick="deleteRow(this)">Eliminar</button></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+
+            </div>
+
+            <!-- Botón de buscar amigos -->
+
+        </div>
+
+    </div>
+
+    <script>
+
+        var show = 1;
+
+        function showFormulary() {
+            if (show == 0) {
+                document.getElementById("formulario").style.display = "none";
+                document.getElementById("addRowButton").style.display = "block";
+                show = 1;
+            }
+            else {
+                document.getElementById("formulario").style.display = "block";
+                document.getElementById("addRowButton").style.display = "none";
+                show = 0;
+            }
+        }
+
+        function deleteRow(request) {
+            var element = request.parentNode.parentNode.rowIndex;
+            document.getElementById("plantilla").deleteRow(element);
+        }
+
+        function addRow() {
+            var p = document.forms["formulario"]["inputHold"].value;
+            var n = document.forms["formulario"]["inputName"].value;
+            var d = document.forms["formulario"]["inputDescription"].value;
+            var s = document.forms["formulario"]["inputState"].value;
+            var table = document.getElementById("plantilla");
+            var row = table.insertRow(1);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            var cell5 = row.insertCell(4);
+            cell1.innerHTML = '<strong>'+p+'<strong>';
+            cell2.innerHTML = n;
+            cell3.innerHTML = d;
+            cell4.innerHTML = s;
+            cell5.innerHTML = '<button class="btn btn-secondary" onclick="deleteRow(this)">Eliminar</button>';
+            document.forms["formulario"]["inputHold"].value="";
+            document.forms["formulario"]["inputName"].value="";
+            document.forms["formulario"]["inputDescription"].value="";
+            showFormulary();
+            return false;
+
+        }
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
