@@ -32,8 +32,12 @@ header {
     margin-left: 2em;
 }
 
-.row + .row {
+.container + .container {
     margin-top: 2em;
+}
+
+.row + .row {
+    margin-top: 1em;
 }
 
 .last-row {
