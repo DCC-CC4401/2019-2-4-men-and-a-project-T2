@@ -1,3 +1,5 @@
+
+
 header {
     color: white;
     background: #2c3e50;
@@ -45,6 +47,10 @@ header {
     margin-bottom: 4rem;
 }
 
+.logo:hover {
+    opacity: 0.5;
+}
+
 .logo {
     width: 7rem;
     height: 3rem;
@@ -53,4 +59,7 @@ header {
 .avatar {
     width: 2rem;
     height: 2rem;
+}
+.avatar:hover {
+    opacity: 0.9;
 }

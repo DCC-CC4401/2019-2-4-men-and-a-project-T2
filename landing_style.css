@@ -77,7 +77,12 @@ header {
 	width: 7rem;
 	height: 3rem;
 }
-
+.logo:hover {
+    opacity: 0.5;
+}
+.avatar:hover {
+    opacity: 0.9;
+}
 .avatar {
 	width: 2rem;
 	height: 2rem;
