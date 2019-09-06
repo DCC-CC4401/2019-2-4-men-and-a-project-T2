@@ -44,3 +44,8 @@ header {
 .last-row {
     margin-bottom: 4rem;
 }
+
+.logo {
+    width: 7rem;
+    height: 3rem;
+}
