@@ -1,0 +1,90 @@
+.ancho-hora {
+    width: 5em
+}
+
+.ancho-tarea{
+    width: 8em
+}
+
+.activity{
+    border: 2px solid darkgrey;
+}
+
+.dormir{
+    background-color: #8468ff;
+    color: black;
+    height: 200px
+}
+
+.no-disponible-v-s-d{
+    background-color: grey;
+    color: black;
+    height: 480px
+}
+
+.no-disponible-j{
+    background-color: grey;
+    color: black;
+    height: 200px
+}
+
+.no-disponible-j{
+    background-color: grey;
+    color: black;
+    height: 280px
+}
+
+.estudiar-l{
+    background-color: #6872ff;
+    color: black;
+    height: 180px
+}
+
+.estudiar-m{
+    background-color: #6872ff;
+    color: black;
+    height: 180px
+}
+
+.no-especificado{
+    background-color: #ffffff;
+    color: black;
+    height: 102px
+}
+
+.no-especificado-mi{
+    background-color: #ffffff;
+    color: black;
+    height: 280px
+}
+
+.ejercitar{
+    background-color: #ff68f2;
+    color: black;
+    height: 40px
+}
+
+.otros-l{
+    background-color: #68ffe6;
+    color: black;
+    height: 60px;
+    
+}
+
+
+.identifier {
+    background-color: #ddd;
+    text-align: center
+}
+
+.module{
+    top: 0px;
+    height: 20px;
+    border-bottom: 1px solid beige
+}
+
+
+th.top{
+    border-bottom: 1px solid black;
+}
+
