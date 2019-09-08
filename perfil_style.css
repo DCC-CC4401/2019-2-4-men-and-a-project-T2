@@ -60,6 +60,7 @@ header {
     width: 2rem;
     height: 2rem;
 }
+
 .avatar:hover {
     opacity: 0.9;
 }
