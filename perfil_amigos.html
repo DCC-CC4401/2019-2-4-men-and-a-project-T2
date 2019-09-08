@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="perfil_style.css">
+
+    <title>Tus Amigos</title>
+</head>
+
+<body>
+
+<!-- Encabezado con el logo, buscar y avatar -->
+<header>
+    <div class="container-fluid color1">
+        <div class="row align-items-center">
+            <div class="col-md-5 offset-md-1">
+                <a href="landing_page.html"><img class="logo" src="logo_v2.jpg" alt="logo"></a>
+            </div>
+            <div class="col-md-3 offset-md-1">
+                <input type="text" class="form-control" placeholder="Buscar">
+            </div>
+            <div class="col-md-1">
+                <div class="btn-group">
+                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                        <img class="avatar" src="avatar.jpg" alt="avatar">
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="perfil_actividades.html">Perfil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Foto de perfil y datos del usuario -->
+<div class="container">
+    <div class="row">
+        <div class="col-3-md perfil-photo">
+            <img src="img_vacia.png" alt="foto de perfil" class="img-thumbnail"/>
+        </div>
+        <div class="col-md-6">
+            <section class="perfil-data">
+                <p class="h5">Nombre</p>
+                <p class="text-muted">Juan Ignacio</p>
+                <p class="h5">Apellidos</p>
+                <p class="text-muted">Pérez González</p>
+                <p class="h5">Correo Electrónico</p>
+                <p class="text-muted">juanito_ignacito@example.com</p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Navs con las opciones principales -->
+    <div class="row align-items-center">
+        <div class="col-md-12 options-btn">
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="perfil_actividades.html">Actividades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="perfil_amigos.html">Tus Amigos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="perfil_solicitudes.html">Solicitudes de Amistad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="perfil_configuraciones.html">Configuraciones</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Sección de refresco de pantalla -->
+<div class="container">
+
+    <!-- Lista de Amigos -->
+    <div class="row">
+        <div class="col">
+            <p class="h4">Amigos</p>
+        </div>
+    </div>
+
+    <div id="refresh_section">
+        <div class="row justify-content-center" style="margin-top: 2em">
+            <div class="card-group">
+                <div class="col-md-3">
+                    <div class="card" style="max-width: 13rem">
+                        <img src="img_vacia.png" class="card-img-top">
+                        <div class="card-body">
+                            <a href="#" class="card-link">Nombre</a>
+                            <p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>
+                        </div>
+                        <div class="card-footer text-right">
+                            <button type="button" class="btn btn-primary btn-sm">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="max-width: 13rem">
+                        <img src="img_vacia.png" class="card-img-top">
+                        <div class="card-body">
+                            <a href="#" class="card-link">Nombre</a>
+                            <p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>
+                        </div>
+                        <div class="card-footer text-right">
+                            <button type="button" class="btn btn-primary btn-sm">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="max-width: 13rem">
+                        <img src="img_vacia.png" class="card-img-top">
+                        <div class="card-body">
+                            <a href="#" class="card-link">Nombre</a>
+                            <p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>
+                        </div>
+                        <div class="card-footer text-right">
+                            <button type="button" class="btn btn-primary btn-sm">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="max-width: 13rem">
+                        <img src="img_vacia.png" class="card-img-top">
+                        <div class="card-body">
+                            <a href="#" class="card-link">Nombre</a>
+                            <p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>
+                        </div>
+                        <div class="card-footer text-right">
+                            <button type="button" class="btn btn-primary btn-sm">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segunda fila de amigos -->
+        <div class="row justify-content-center" style="margin-top: 2em">
+            <div class="card-group">
+                <div class="col-md-3">
+                    <div class="card" style="max-width: 13rem">
+                        <img src="img_vacia.png" class="card-img-top">
+                        <div class="card-body">
+                            <a href="#" class="card-link">Nombre</a>
+                            <p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>
+                        </div>
+                        <div class="card-footer text-right">
+                            <button type="button" class="btn btn-primary btn-sm">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="max-width: 13rem">
+                        <img src="img_vacia.png" class="card-img-top">
+                        <div class="card-body">
+                            <a href="#" class="card-link">Nombre</a>
+                            <p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>
+                        </div>
+                        <div class="card-footer text-right">
+                            <button type="button" class="btn btn-primary btn-sm">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="max-width: 13rem">
+                        <img src="img_vacia.png" class="card-img-top">
+                        <div class="card-body">
+                            <a href="#" class="card-link">Nombre</a>
+                            <p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>
+                        </div>
+                        <div class="card-footer text-right">
+                            <button type="button" class="btn btn-primary btn-sm">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="max-width: 13rem">
+                        <img src="img_vacia.png" class="card-img-top">
+                        <div class="card-body">
+                            <a href="#" class="card-link">Nombre</a>
+                            <p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>
+                        </div>
+                        <div class="card-footer text-right">
+                            <button type="button" class="btn btn-primary btn-sm">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lista paginada -->
+    <div class="row justify-content-center">
+        <nav aria-label="Page navigation example" style="margin-top: 2em">
+            <ul class="pagination">
+                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#" onclick="mostrarTusAmigos(1)">1</a></li>
+                <li class="page-item"><a class="page-link" href="#" onclick="mostrarTusAmigos(2)">2</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</div>
+
+<!-- JavaScript que controla el refresh de la página -->
+<script>
+
+    function mostrarTusAmigos(num_page) {
+
+            switch (num_page){
+                case 1:
+                    document.getElementById("refresh_section").innerHTML =
+                        '<div class="row justify-content-center" style="margin-top: 2em">' +
+                            '<div class="card-group">' +
+                                '<div class="col-md-3">' +
+                                    '<div class="card" style="max-width: 13rem">' +
+                                        '<img src="img_vacia.png" class="card-img-top">' +
+                                        '<div class="card-body">' +
+                                            '<a href="#" class="card-link">Nombre</a>' +
+                                            '<p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>' +
+                                        '</div>' +
+                                        '<div class="card-footer text-right">' +
+                                            '<button type="button" class="btn btn-primary btn-sm">Eliminar</button>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="col-md-3">' +
+                                    '<div class="card" style="max-width: 13rem">' +
+                                        '<img src="img_vacia.png" class="card-img-top">' +
+                                        '<div class="card-body">' +
+                                            '<a href="#" class="card-link">Nombre</a>' +
+                                            '<p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>' +
+                                        '</div>' +
+                                        '<div class="card-footer text-right">' +
+                                            '<button type="button" class="btn btn-primary btn-sm">Eliminar</button>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="col-md-3">' +
+                                    '<div class="card" style="max-width: 13rem">' +
+                                        '<img src="img_vacia.png" class="card-img-top">' +
+                                        '<div class="card-body">' +
+                                                '<a href="#" class="card-link">Nombre</a>' +
+                                                '<p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>' +
+                                        '</div>' +
+                                        '<div class="card-footer text-right">' +
+                                            '<button type="button" class="btn btn-primary btn-sm">Eliminar</button>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="col-md-3">' +
+                                    '<div class="card" style="max-width: 13rem">' +
+                                        '<img src="img_vacia.png" class="card-img-top">' +
+                                        '<div class="card-body">' +
+                                            '<a href="#" class="card-link">Nombre</a>' +
+                                            '<p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>' +
+                                        '</div>' +
+                                        '<div class="card-footer text-right">' +
+                                            '<button type="button" class="btn btn-primary btn-sm">Eliminar</button>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>' +
+                        '</div>' +
+                        '<div class="row justify-content-center" style="margin-top: 2em">' +
+                            '<div class="card-group">' +
+                                '<div class="col-md-3">' +
+                                    '<div class="card" style="max-width: 13rem">' +
+                                        '<img src="img_vacia.png" class="card-img-top">' +
+                                        '<div class="card-body">' +
+                                            '<a href="#" class="card-link">Nombre</a>' +
+                                            '<p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>' +
+                                        '</div>' +
+                                        '<div class="card-footer text-right">' +
+                                            '<button type="button" class="btn btn-primary btn-sm">Eliminar</button>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="col-md-3">' +
+                                    '<div class="card" style="max-width: 13rem">' +
+                                        '<img src="img_vacia.png" class="card-img-top">' +
+                                        '<div class="card-body">' +
+                                            '<a href="#" class="card-link">Nombre</a>' +
+                                            '<p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>' +
+                                        '</div>' +
+                                        '<div class="card-footer text-right">' +
+                                            '<button type="button" class="btn btn-primary btn-sm">Eliminar</button>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="col-md-3">' +
+                                    '<div class="card" style="max-width: 13rem">' +
+                                        '<img src="img_vacia.png" class="card-img-top">' +
+                                        '<div class="card-body">' +
+                                            '<a href="#" class="card-link">Nombre</a>' +
+                                            '<p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>' +
+                                        '</div>' +
+                                        '<div class="card-footer text-right">' +
+                                            '<button type="button" class="btn btn-primary btn-sm">Eliminar</button>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="col-md-3">' +
+                                    '<div class="card" style="max-width: 13rem">' +
+                                    '<img src="img_vacia.png" class="card-img-top">' +
+                                        '<div class="card-body">' +
+                                            '<a href="#" class="card-link">Nombre</a>' +
+                                            '<p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>' +
+                                        '</div>' +
+                                        '<div class="card-footer text-right">' +
+                                            '<button type="button" class="btn btn-primary btn-sm">Eliminar</button>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>' +
+                        '</div>'
+                    break;
+                case 2:
+                    document.getElementById("refresh_section").innerHTML =
+                        '<div class="row justify-content-center" style="margin-top: 2em">' +
+                            '<div class="card-group">' +
+                                '<div class="col-md-3">' +
+                                    '<div class="card" style="max-width: 13rem">' +
+                                        '<img src="img_vacia.png" class="card-img-top">' +
+                                        '<div class="card-body">' +
+                                            '<a href="#" class="card-link">Nombre</a>' +
+                                            '<p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>' +
+                                        '</div>' +
+                                        '<div class="card-footer text-right">' +
+                                            '<button type="button" class="btn btn-primary btn-sm">Eliminar</button>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="col-md-3">' +
+                                    '<div class="card" style="max-width: 13rem">' +
+                                        '<img src="img_vacia.png" class="card-img-top">' +
+                                        '<div class="card-body">' +
+                                            '<a href="#" class="card-link">Nombre</a>' +
+                                            '<p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>' +
+                                        '</div>' +
+                                        '<div class="card-footer text-right">' +
+                                            '<button type="button" class="btn btn-primary btn-sm">Eliminar</button>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="col-md-3">' +
+                                    '<div class="card" style="max-width: 13rem">' +
+                                        '<img src="img_vacia.png" class="card-img-top">' +
+                                        '<div class="card-body">' +
+                                            '<a href="#" class="card-link">Nombre</a>' +
+                                            '<p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>' +
+                                        '</div>' +
+                                        '<div class="card-footer text-right">' +
+                                            '<button type="button" class="btn btn-primary btn-sm">Eliminar</button>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="col-md-3">' +
+                                    '<div class="card" style="max-width: 13rem">' +
+                                        '<img src="img_vacia.png" class="card-img-top">' +
+                                        '<div class="card-body">' +
+                                            '<a href="#" class="card-link">Nombre</a>' +
+                                            '<p class="card-text"><small class="text-muted">Amigos hace 1 año</small></p>' +
+                                        '</div>' +
+                                        '<div class="card-footer text-right">' +
+                                            '<button type="button" class="btn btn-primary btn-sm">Eliminar</button>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>' +
+                        '</div>'
+                    break;
+
+
+            }
+    }
+</script>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
